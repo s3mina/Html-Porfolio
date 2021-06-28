@@ -1,0 +1,53 @@
+.menu{
+	display: flex;
+  	justify-content: flex-end;
+  	
+
+}
+.navbar li{
+	list-style: none;
+	
+} 
+.menu .navbar a:hover{
+	color: tomato;
+}
+nav{
+	position: relative;
+	z-index: 1;
+	background-color: #333;
+	text-align: right;
+}
+.menu .navbar li{
+	background-color: #333;
+	float: left;
+
+}
+.menu .navbar li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 0 25px;
+	font-size: 16px;
+	line-height: 30px;
+	font-family: sans-serif; 
+}
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: sans-serif;
+
+}
+footer{
+	background-color: #333;
+	width: 100%;
+	margin-bottom: 0px;
+
+}
+
+footer .footer{
+	float: left;
+	padding: 20px;
+
+}
+

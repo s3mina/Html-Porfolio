@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="Gallery/stylesheet.css">
+
+</head>
+
+<body >
+	
+	<center>
+		<style type="text/css">
+			.mySlides{
+				height: 620px;
+				width: 500px;
+				margin-top: 20px;
+				filter: grayscale(0%);
+				margin-left: 35%;
+
+			}
+
+			.mySlides:hover{
+				transform: scale(0.7);
+				filter: grayscale(100%);				
+
+			}
+		</style>
+
+	
+		
+	</center>
+
+<div class="imgborder">
+	
+<div style="padding-left:50px; padding-right:50px; padding-top: 50px;">
+    <img class="mySlides" src="image/3.jpg " >
+    <img class="mySlides" src="image/2.jpg" >
+    <img class="mySlides" src="image/6.jpg" >
+</div>	<!--inline style closed-->
+
+
+
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+</script>
+
+
+	<script type="text/javascript">
+		
+		index = 0;
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+
+
+
+		
+	</script>
+</div>	<!--img border closed-->
+
+<div class="container">
+	<div class="box">
+		<div class="image">
+			<img src="Gallery/5.jpg" width="300px" height="300px">
+		</div>	<!--image closed-->
+
+		<div class="text">
+			<div class="content">
+				<h2>First bungee jump</h2>	
+				<!--<P> First position secured in girls volleyball</P>-->
+			</div>	<!--text closed-->
+		</div>	<!--class text closed-->
+	</div>	<!--box closed-->
+
+
+	<div class="box">
+		<div class="image">
+			<img src="Gallery/3.jpg" width="300px" height="300px">
+		</div>	<!--image closed-->
+
+		<div class="text">
+			<div class="content">
+				<h2>Trekking to Sarangkot</h2>	
+				<!--<P> this is my first ride after getting my bike</P>-->
+			</div>	<!--content closed-->
+		</div>	<!--text closed-->
+	 </div>	<!--box closed-->
+	<div class="box">
+	<div class="image">
+			<img src="Gallery/c.jpg" width="300px" height="300px" style="background-color: white;">
+		</div>	<!--image closed-->
+		<div class="text">
+			<div class="content">
+				<h2>At Lakeside</h2>	
+				<!--<P> Logo Designed</P>-->
+			</div>	<!--content closed-->
+		</div> <!--text closed-->
+	</div>	<!--box closed-->
+	<div class="box"> 
+		<div class="image">
+			<img src="Gallery/a.jpg" width="300px" height="300px">
+		</div>	<!--image closed-->
+
+		<div class="text">
+			<div class="content">
+				<h2>Gurung dress</h2>	
+				<!--<P> this is my first ride after getting my bike</P>-->
+			</div>	<!--text closed-->
+		</div>	<!--text closed-->
+	</div>	<!--box closed-->
+
+
+	<div class="box">
+		<div class="image">
+			<img src="Gallery/4.jpg" width="300px" height="300px">
+		</div>	<!--image closed-->
+		<div class="text">
+			<div class="content">
+				<h2>Farewell Programme at college</h2>	
+				<!--<P> this is my first ride after getting my bike</P>-->
+			</div>	<!--text closed-->
+		</div>	<!--text closed-->
+	 </div>	<!--box closed-->
+
+
+	<div class="box">
+		<div class="image">
+			<img src="Gallery/sapna.jpg" width="300px" height="300px">
+		</div>	<!--image closed-->
+		<div class="text">
+			<div class="content">
+				<h2>Ready for hissan dance competition</h2>	
+				<!--<P> this is my first ride after getting my bike</P>-->
+			</div>
+		</div>	<!--text closed-->
+	 </div>	<!--box closed-->
+
+	
+</div>	<!--container closed-->
+
+</body>
+</html>

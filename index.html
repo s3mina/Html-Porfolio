@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<meta name="description" content="Webpage html">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="Sapana Chhetri">
+	<meta http-eauiv="refresh" content="720">
+
+	<style>
+		/*.row h2{
+			margin-top: 580px;
+			margin-left: 800px;
+			text-shadow: 5px 5px 10px #3f729b;
+		}*/
+
+		#clock_txt : hover{
+			color: tomato;
+
+		}
+	</style>
+</head>
+
+<body background="css/index.jpg" style="background-size: cover; background-repeat: no-repeat;" onload="startTime()">
+
+	<nav>
+		<div class="menu">
+			<ul class="navbar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About Me</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="Blog.html">Blog</a></li>
+				<li><a href="contacts.html">Contact</a></li>
+				<li><a href="Research.html">Research</a></li>
+			</ul>	<!--navbar closed-->
+		</div>	<!--menu closed-->
+	</nav>	<!--nav tag closed-->
+
+	<div class="container">
+		<div class="row">
+			<h2>Hello there!!!</h2>
+			<ul>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="https://drive.google.com/file/d/1TJGJRYkFp7s4UweQupkDCcv1hC76DmfU/view?usp=sharing">Download CV</a></li>
+			</ul>
+		</div>	<!--row closed-->
+	</div>	<!--container closed-->
+	
+	
+		
+	<div id="clock_txt" style="color: white; font-size: 16px; float: left;">
+		
+	</div>	<!--clock_txt closed-->
+
+<footer>
+	<div class="footer" style="background-color: #333; width: 100%; margin-top: 480px;" >
+		<a href=""><img id="img1" src="social/fb.png" style="height: 40px; width: 40px; border-radius: 15px;"></a>
+		<a href="https://www.instagram.com"><img id="img2" src="social/ig.jpg" style="height: 40px; width: 40px; border-radius: 15px;"></a>
+		<a href=""><img id="img3" src="social/tw.jpg" style="height: 40px; width: 40px; border-radius: 15px;"></a>
+		<h4 style="color:white;">Copyright@SapanaChhetri2019</h4>
+	</div>
+	
+</footer>
+
+</body>
+
+<script>	//Javascript for time
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  h - checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock_txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>	<!--Javascript closed--> 
+
+</html>

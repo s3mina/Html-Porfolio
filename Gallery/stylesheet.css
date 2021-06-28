@@ -1,0 +1,119 @@
+body{
+	background-color: black;
+}
+.imgborder{
+	width: 100%
+	height:620px;
+	border-radius: 2px solid grey;
+}
+.image1{
+	float: left;
+}
+.image1:hover{
+	transform: scale(1.2);
+}
+
+.image2{
+	float: left;
+}
+.image2:hover{
+	transform: scale(1.2);
+}
+
+.image3{
+	float: left;
+}
+.image3:hover{
+	transform: scale(1.2);
+}
+
+.image4{
+	float: left;
+}
+.image4:hover{
+	transform: scale(1.2);
+}
+.container{
+	margin: 90px 40px 50px 100px;
+}
+.container .box
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #808080;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+
+}
+
+.container .box .image
+{
+	position: relative;
+
+
+
+}
+
+.container .box .image img
+{
+	max-width: 100%;
+	transition: transform 3s;
+	filter: grayscale(0%);
+	border-radius: 5px solid grey;
+	
+}
+
+
+.container .box:hover .image img
+{
+	transform: scale(0.8);
+	filter: grayscale(100%);
+}
+
+.container .box .text
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+	}
+
+.container .box:hover .text
+{
+	transform: scaleY(1);
+}
+
+
+.container .box .text .content
+{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color:#fff;
+
+}
+
+.container .box .text .content h2
+{
+	margin: 0;
+	padding: 0;
+	font-size:20px;
+	color:#ff0;
+}
+
+.container .box .text .content p
+{
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+
+
